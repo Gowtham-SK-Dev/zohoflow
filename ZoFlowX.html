@@ -4,9 +4,16 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
       <title>ZoFlowX</title>
       <style>
+          body {
+      font-family: 'Instrument Sans', sans-serif;
+    }
+    h1, p {
+  font-family: 'Instrument Sans', sans-serif;
+}
          /* Dashboard positioning */
          .dashboard-img {
          position: absolute;
@@ -14,7 +21,54 @@
          max-width: 626px;
          z-index: 1000;
          right: 28%;
+
          }
+         .dashboard-img-mobile { 
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    
+   
+}@media only screen and (max-width: 1200px) {
+  .dashboard-img-mobile {
+    display: block;
+  }
+  .footer-subs-section{
+   display: block;
+  }
+ .footer-section-web{
+   display: none;
+ }
+ 
+ .bussiness-img{
+   width: 100% !important;  
+  
+ }
+}
+@media only screen and (min-width: 1200px) {
+   .bussiness-img{
+   width: 80% !important;
+   height: 80% !important;
+ }
+  .dashboard-img-mobile {
+    display: none;
+  }
+  .dev-img{
+   position: absolute; top: -265px;
+          
+            left: 450px;
+         
+  }
+  .footer-subs-section{
+   display: none;
+  }
+  .footer-section-web{
+   display: block;
+  }
+}
          @media (max-width: 2560px) {
          .dashboard-img {
          position: absolute;
@@ -50,6 +104,11 @@
          margin-bottom: -100px;
          }
          }
+         @media (max-width: 1203.98px) {
+  .dashboard-img {
+    display: none;
+  }
+}
          @keyframes horizontal-shaking {
          0% { transform: translateX(0) }
          25% { transform: translateX(50px) }
@@ -64,65 +123,1105 @@
          75% { transform: translateY(20px) }
          100% { transform: translateY(0) }
          }
+         h1.responsive-heading {
+    font-family: sans-serif;
+   
+    font-size: 58px;
+    line-height: 100%;
+  }
+  .responsive-heading {
+    font-family: sans-serif;
+    line-height: 100%;
+  }
+  @media (max-width: 768px) {
+    .responsive-heading {
+      font-size: 22px !important;
+    }
+  }
+  h1.responsive-heading.bold {
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    h1.responsive-heading {
+      font-size: 22px !important;
+    }
+  }
+  .padding-btm-blue{
+   padding-top: 360px;
+   position: relative; 
+   background-image: url('./ZOHO/blue-bg.svg'); 
+   background-repeat: no-repeat; height: 100%; 
+   background-size: cover;
+  }
+  @media only screen and (max-width: 1024px) {
+  .padding-btm-blue {
+   padding-top: 16px !important;
+   position: relative; 
+   background-image: url('./ZOHO/blue-bg.svg'); 
+   background-repeat: no-repeat; height: 100%; 
+   background-size: cover;
+   background-position-x: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .padding-btm-blue {
+   padding-top: 360px;
+   position: relative; 
+   background-image: url('./ZOHO/blue-bg.svg'); 
+   background-repeat: no-repeat; height: 100%; 
+   background-size: cover;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .hero-book-btn {
+   padding-bottom: 10px !important; justify-content: center !important; display: flex !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-book-btn {
+   padding-bottom: 500px; justify-content: center; display: flex;
+  }
+}
+.image-wrapper {
+  position: absolute;
+  z-index: 1000;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Mobile and tablet (≤1024px) styles */
+@media (max-width: 1024px) {
+   .image-1 {
+   bottom: -400px !important;
+    /* top: 0; */
+        left: 280px !important;
+    
+  }
+ 
+  .image-2 {
+   right: 254px !important;
+   bottom: -405px !important;
+  }
+
+  .image-3 {
+   right: 254px !important;
+   bottom: -405px !important;
+  }
+
+  .image-4 {
+   right: 0 !important;
+   bottom: -105px !important;
+   
+  }
+  .hero-section-4{
+   display: black !important;
+  }
+  .hero-section-5{
+   display: none !important;
+  }
+}
+
+/* Specific positioning for each image */
+@media (min-width: 1200px){
+ .hero-section-4{
+   display: none !important;
+  }
+  .hero-section-5{
+   display: black !important;
+  }
+   .image-1 {
+  left: 300px;
+}
+
+.image-2 {
+  right: -338px;
+  top: 332px;
+}
+
+.image-3 {
+  right: -650px;
+  top: 0px;
+}
+
+.image-4 {
+  right: -601px;
+  top: 8px;
+}
+.img-wrap-fluid{
+      width: 100%;
+  }
+}
+.service-box {
+      border-radius: 28px;
+      padding: 36px 24px;
+      min-height: 484px;
+      margin-bottom: 24px;
+    }
+
+@media (max-width: 768px){
+   .saas-section-wrap{
+      padding: 35px 35px 28px 27px !important;
+        min-height: 200px !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   .saas-section{
+      font-size: 12px !important;
+      width: 100px !important;
+      text-align: center;
+      
+   }
+   .image-1 {
+   bottom: -286px !important;
+    /* top: 0; */
+        left: 150px !important;
+    
+  }
+
+  .image-2 {
+   right: 186px !important; 
+   bottom: -310px !important;
+  }
+
+  .image-3 {
+   right: 186px !important; 
+   bottom: -310px !important;
+  }
+
+  .image-4 {
+   right: 0 !important;
+   bottom: -82px !important;
+   
+  }
+  .img-wrap-fluid{
+      width: 100% !important;
+  }
+}
+@media (max-width: 425px){
+
+   .image-1 {
+   bottom: -160px !important;
+    /* top: 0; */
+        left: 72px !important;
+    
+  }
+
+
+  .image-2 {
+   right: 93px !important; 
+   bottom: -170px !important;
+  }
+
+  .image-3 {
+   right: 93px !important; 
+   bottom: -170px !important;
+  }
+
+  .image-4 {
+   right: 0 !important;
+   bottom: -50px !important;
+   
+  }
+  .img-wrap-fluid{
+      width: 330px !important;
+  }
+}
+/* Mobile styles: apply fixed size */
+@media (max-width: 1024px) {
+  .img-fluid {
+    width: 88.018px;
+    height: 76.045px;
+  }
+  .img-wrap-fluid{
+      width: 100% !important;
+  }
+}
+.line-img-wrapper {
+  position: absolute;
+  top: -86px;
+}
+
+.line-img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile adjustment (1024px and below) */
+@media (max-width: 1024px) {
+  .line-img-wrapper {
+    position: relative;
+    top:-56px;
+    padding-top: 20px; /* optional spacing */
+  }
+
+  .line-img-wrapper img {
+    width: 100%;
+    height: 100%
+  }
+}
+.why-section {
+  padding-top: 400px;
+}
+
+.why-section p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.81);
+}
+
+/* Mobile styles */
+@media (max-width: 1024px) {
+  .why-section {
+    padding-top: 10px;
+  }
+
+  .why-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+ /* Cards */
+ .feature-card {
+      background-color: #5891C70D;
+      height: 273px;
+      padding: 33px;
+      border: 1px solid;
+      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
+      box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      
+    }
+    @media (max-width: 1024px) {
+      .feature-card {
+      background-color: #5891C70D;
+      height: 200px;
+      padding: 23px;
+      border: 1px solid;
+      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
+      box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      
+    }
+      }
+
+    /* Default: Desktop (above 1024px) */
+.card-font-large {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-font-medium {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Mobile and Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .card-font-large {
+    font-size: 14px !important;
+  }
+
+  .card-font-medium {
+    font-size: 12px !important;
+  }
+}
+.section-responsive-img {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Mobile adjustment: 1024px and below */
+@media (max-width: 1024px) {
+  .section-responsive-img {
+    width: 50px;
+    height: 36px;
+  }
+}
+.heading-sub {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.heading-main {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.description-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.81);
+}
+
+.service-block {
+  background-color: #FFFFFF;
+  border-radius: 48px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-block-wrapper{
+padding-bottom: 500px; 
+position: relative;
+}
+@media (max-width: 1024px){
+   .service-block-wrapper{
+padding-bottom: 250px; 
+position: relative;
+}
+}
+
+.service-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  
+}
+
+.mainheading {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Mobile (≤1024px) */
+@media (max-width: 1024px) {
+  .heading-sub,
+  .heading-main {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .description-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .mainheading {
+    font-size: 22px;
+    padding-left: 0px;
+  }
+
+  .subheading {
+    font-size: 16px;
+    padding-left: 0px;
+
+  }
+
+  .service-block {
+    padding: 20px;
+  }
+
+  .service-image {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+
+  ul.fs-6 li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.cta-button-block {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button {
+  background-color: rgba(34, 108, 179, 1);
+  border-radius: 25px;
+}
+
+.cta-image-wrapper {
+  text-align: center;
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
+  z-index: 0;
+}
+
+.cta-bg-image {
+  width: 100%;
+}
+
+/* Mobile (≤1024px) */
+@media (max-width: 1024px) {
+  .cta-button-block {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .cta-image-wrapper {
+    bottom: -19px;
+  }
+  .dev-img{
+   position: absolute;         top: -272px;
+   left: 25%;
+ 
+  }
+  .service-box {
+      border-radius: 28px !important;
+      padding: 36px 24px;
+      min-height: 712px !important;
+      margin-bottom: 24px !important;
+    }
+    .footer-responive-title{
+      font-size: 22px !important;
+    }
+    .responsive-title {
+      font-size: 22px !important;
+    }
+
+    .responsive-subtitle {
+      font-size: 22px !important;
+    }
+
+    .responsive-heading {
+      font-size: 22px !important;
+    }
+
+    .responsive-paragraph {
+      font-size: 14px !important;
+      width: 100% !important;
+    }
+
+    .responsive-container {
+      padding-top: 250px !important;
+    }
+  
+}
+
+@media (max-width: 768px) {
+  .cta-button-block {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .dev-img{
+   position: absolute;     top: -56px;
+        left: 26%;
+        width: 400px;
+        height: 414px;
+  }
+  .cta-image-wrapper {
+    bottom: -52px !important;
+  }
+  .service-box {
+      border-radius: 28px !important;
+      padding: 36px 24px !important;
+      min-height: 585px !important;
+      margin-bottom: 24px !important;
+    }
+    .responsive-container {
+      padding-top: 400px !important;
+    }
+}
+@media (max-width: 800px) {
+  .cta-button-block {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .dev-img{
+   position: absolute;     top: -56px;
+        left: 26%;
+        width: 400px;
+        height: 414px;
+  }
+  .cta-image-wrapper {
+    bottom: -52px !important;
+  }
+  .service-box {
+      border-radius: 28px !important;
+      padding: 36px 24px !important;
+      min-height: 585px !important;
+      margin-bottom: 24px !important;
+    }
+    .responsive-container {
+      padding-top: 400px !important;
+    }
+}
+@media (max-width: 425px) {
+  
+  .cta-button-block {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .dev-img{
+   position: absolute;     top: -35px !important;
+        left: 26% !important;
+        width: 200px !important;
+        height: 214px !important;
+  }
+  .cta-image-wrapper {
+    bottom: -19px;
+  }
+
+      .service-box {
+      border-radius: 28px !important;
+      padding: 36px 24px !important;
+      min-height: 502px !important;
+      margin-bottom: 24px !important;
+    }
+    .responsive-container {
+      padding-top: 200px !important;
+    }
+  
+}
+
+@media (max-width: 425px){
+  .cta-bg-image{
+   width: 100%;
+  }
+  .cta-image-wrapper {
+    bottom: 80px;
+  }
+  .card-font-large{
+      font-size: 10px !important;
+      white-space: wrap !important;
+   }
+}
+@media (max-width: 430px) {
+  
+  .cta-button-block {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .dev-img{
+   position: absolute;     top: -35px !important;
+        left: 22% !important;
+        width: 200px !important;
+        height: 214px !important;
+  }
+  .cta-image-wrapper {
+    bottom: -38px !important;
+  }
+   .card-font-large{
+      font-size: 10px !important;
+      white-space: wrap !important;
+   }
+      .service-box {
+      border-radius: 28px !important;
+      padding: 36px 24px !important;
+      min-height: 502px !important;
+      margin-bottom: 24px !important;
+    }
+    .responsive-container {
+      padding-top: 200px !important;
+    }
+    .image-1 {
+   bottom: -155px !important;
+    /* top: 0; */
+        left: 72px !important;
+    
+  }
+
+  .image-2 {
+   right: 75px !important; 
+   bottom: -146px !important;
+  }
+
+  .image-3 {
+   right: 75px !important; 
+   bottom: -146px !important;
+  }
+
+  .image-4 {
+   right: 0 !important;
+   bottom: -50px !important;
+   
+  }
+  .responsive-description{
+      font-size: 10px !important;
+      white-space: wrap !important;
+  }
+  .img-wrap-fluid{
+   width: 100% !important;
+  }
+}
+.zo-description {
+  text-align: start;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.81);
+}
+@media (max-width: 375px){
+   .cta-image-wrapper{
+      bottom: 90px;
+   }
+}
+@media (max-width: 1024px) {
+   .core-title{
+      font-size: 20px !important;
+   }
+   .core-desc{
+      font-size: 14px !important;
+   }
+  .zo-description {
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .mobile-padding-top {
+    padding-top: 60px;
+  }
+  
+}
+@media (max-width: 1024px) {
+   .fs-14-below-1024 {
+        font-size: 16px !important;
+        padding: 0px;
+      }
+  .responsive-title {
+    font-size: 24px !important;
+  }
+  .coming-responsive{
+    width: 96px;
+    height: 54px;
+  }
+  .coming-absolute{
+   position: absolute ; bottom: -26px !important; right: -36px !important;;
+  }
+  .responsive-description {
+    font-size: 16px !important;
+  }
+  .mobile-header{
+   display: block;
+  }
+  .web-header{
+   display: none;
+  }
+   .header-red-circle{
+   position: absolute; top: -111px;
+            right: 0px;
+   }
+   .hero-title{
+ 
+         padding-top: 24px;
+         padding-bottom: 30px; position: relative;
+   }
+   .hero-section-1{
+      display: none;
+   }
+   .hero-section-2{
+      display: none;
+   }
+}
+
+@media (min-width: 1024px) {
+   .hero-section-1{
+      display: none;
+   }
+   .hero-section-1{
+      display: none;
+   }
+   .hero-title{
+ 
+ padding-top: 102px;
+ padding-bottom: 42px; position: relative;
+}
+   .header-red-circle{
+   position: absolute; top: -100px;
+            right: 0px;
+   }
+   .mobile-header{
+   display: none;
+  }
+  .web-header{
+   display: block;
+   position: relative;
+   z-index: 1000;
+  }
+  .responsive-title {
+    font-size: 48px !important;
+  }
+
+  .responsive-description {
+    font-size: 20px !important;
+  }
+}
+.responsive-box {
+  background: white;
+  padding: 44px 122px 54px 122px;
+  border-radius: 20px;
+  border: 3px solid rgba(227, 227, 227, 1);
+  height: 486px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.responsive-text {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 0;
+  
+}
+
+/* Mobile styles */
+@media (max-width: 1024px) {
+  .responsive-box {
+    padding: 20px 24px;
+    height: auto;
+  }
+
+  .responsive-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .responsive-img {
+    padding-bottom: 20px;
+  }
+}
+.section-heading {
+  padding-top: 144px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading h4 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.section-heading .light-heading {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.section-subtext {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 630px;
+  width: 100%;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+   .fs-14-below-1024 {
+        font-size: 14px !important;
+        padding: 0px;
+      }
+  .section-heading {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+ 
+  .section-heading h4,
+  .section-heading .light-heading {
+    font-size: 24px;
+  }
+
+  .section-subtext {
+    font-size: 14px;
+    padding: 0 16px;
+    max-width: 100%;
+  }
+}
+
+.stat-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.stat-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.stat-note {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 1024px) {
+   .pb-30-custom {
+        padding-bottom: 30px !important;
+      }
+   .custom-pb-lg {
+    padding-bottom: 300px !important; /* ~pb-10 */
+  }
+  .stat-subtitle {
+    font-size: 16px;
+  }
+
+  .stat-title {
+    font-size: 24px;
+  }
+
+  .stat-note {
+    font-size: 16px;
+  }
+  .automation-section{
+   padding-top: 0px !important;
+   padding-bottom: 40px !important;
+  }
+}
+@media (max-width: 768px) {
+   .custom-pb-lg {
+    padding-bottom: 100px !important; /* ~pb-10 */
+  }
+    .footer-section {
+      text-align: center !important;
+    }
+    .footer-section-service {
+      text-align: center !important;
+    }
+    .footer-section-contact {
+      text-align: center !important;
+    }
+    .footer-section p,
+    .footer-section div {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+    .footer-section-service p,
+    .footer-section-service div {
+      text-align: left !important;
+      justify-content: left !important;
+    } 
+    .footer-section-contact p,
+    .footer-section-contact div {
+      text-align: left !important;
+      justify-content: left !important;
+    }
+    .footer-input {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    .footer-input input {
+      width: 100% !important;
+      border-radius: 30px !important;
+      margin-bottom: 10px;
+    }
+
+    .footer-input button {
+      width: 100%;
+      border-radius: 30px !important;
+    }
+
+    .footer-icon-row {
+      justify-content: center !important;
+    }
+  }
+  .floating-img {
+  position: absolute;
+  animation: vertical-shaking 10s infinite ease-in-out;
+}
+
+.floating-img img {
+  width: 100%;
+  height: auto;
+  max-width: 100px; /* default size */
+}
+
+/* Positioning classes */
+.group-50 { right: 18%; top: 80px; }
+.group-53 { right: 8%; top: 180px; }
+.group-51 { right: 11%; bottom: 190px; }
+.group-49 { left: 20%; top: 202px; }
+.group-52 { left: 19%; bottom: 140px; }
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .floating-img {
+    position: absolute;
+  }
+
+  .floating-img img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .group-50 { right: 10%; top: 40px; }
+  .group-53 { right: 5%; top: 100px; }
+  .group-51 { right: 6%; bottom: 80px; }
+  .group-49 { left: 10%; top: 100px; }
+  .group-52 { left: 10%; bottom: 60px; }
+}
+
+@media (min-width: 1025px) {
+  .custom-pb-lg {
+    padding-bottom: 300px !important; /* ~pb-10 */
+  }
+}
       </style>
    </head>
    <body >
-      <div class="container ">
-         <div class=" ">
+      
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg  mobile-header">
+   <div class="container">
+     <a class="navbar-brand" href="#">
+       <img src="./ZOHO/Group 1410083720.svg" alt="ZoFlowX Logo">
+     </a>
+     <button class="navbar-toggler" style="background-color: #FFFFFF; border: none; position: relative; z-index: 1;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <img src="./ZOHO/ci_hamburger-md.svg" alt="ci_hamburger-md"/>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav" style="position: relative; z-index: 1;">
+       <ul class="navbar-nav ms-auto" style="position: relative; z-index: 1;">
+         <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+         <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+           <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Book a Call</button>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+
+ <div class="container web-header">
+   <div class=" ">
+      <div class="row">
+         <div class="col-4">
+            <img src="./ZOHO/Group 1410083720.svg"  alt="Norway"  />
+         </div>
+         <div class="col-4  text-center " style="align-self: center">
             <div class="row">
-               <div class="col-4">
-                  <img src="ZOHO/Group 1410083720.svg"  alt="Norway"  />
-               </div>
-               <div class="col-4  text-center " style="align-self: center">
-                  <div class="row">
-                     <div class="col-4 " style="font-size: 16px; font-weight: 500;">Services</div>
-                     <div class="col-4" style="font-size: 16px; font-weight: 500;">About</div>
-                     <div class="col-4" style="font-size: 16px; font-weight: 500;">Contact</div>
-                  </div>
-               </div>
-               <div class=" col-4 " style="align-self: center; display: flex; justify-content: end;">
-                  <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Book a Call</button>          
-               </div>
+               <div class="col-4 " style="font-size: 16px; font-weight: 500;">Services</div>
+               <div class="col-4" style="font-size: 16px; font-weight: 500;">About</div>
+               <div class="col-4" style="font-size: 16px; font-weight: 500;">Contact</div>
             </div>
          </div>
+         <div class=" col-4 " style="align-self: center; display: flex; justify-content: end;">
+            <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Book a Call</button>          
+         </div>
       </div>
+   </div>
+</div>
       <div style="position: relative;">
-         <div style="position: absolute; top: -83px;
-            right: 0px;">
-            <img src="ZOHO/red-circle.svg"  alt="marketing" style="width: 100%; " >
+         <div class="header-red-circle">
+            <img src="./ZOHO/red-circle.svg"  alt="marketing" style="width: 100%; " >
          </div>
          <div style="position: absolute; top: 400px;
             right: 0px;">
-            <img src="ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
          </div>
       </div>
-      <div class="container text-center" style="
-         padding-top: 102px;
-         padding-bottom: 42px; position: relative">
+      <div class="container text-center hero-title" >
          <div class="row ">
             <div class="col-12">
-               <h1 style="font: sans;font-weight: 300;font-size: 58px;line-height: 100%;">Transform Your Growth with</h1>
+               <h1 class="responsive-heading" style="font-size: 400;" >Transform Your Growth with</h1>
             </div>
             <div class="col-12">
-               <h1 style="font: sans;font-weight: 700;font-size: 58px;line-height: 100%;">Zoho Marketing Automation</h1>
+               <h1 style="font: sans;font-weight: 700;" class="responsive-heading">Zoho Marketing Automation</h1>
             </div>
          </div>
       </div>
+     
+<div class="dashboard-img-mobile ">
+         <img src="./ZOHO/Dashboard.png" class="card-img-top container-fluid " alt="marketing" width="204px" height="100%" >
+         <div style="position: absolute; right: 12%; top: 48px; animation: horizontal-shaking 10s infinite ease-in-out; ">
+            <img src="./ZOHO/Group 50.svg" alt="marketing"  style="width: 34px; height: 34px;"  >
+         </div>
+         <div style="position: absolute; right: 10%; top: 100px;  animation: vertical-shaking 10s infinite ease-in-out">
+            <img src="./ZOHO/Group 53.svg" alt="marketing"   style="width: 34px; height: 34px;" >
+         </div>
+         <div style="position: absolute; right: 10%; bottom: 90px;animation: vertical-shaking 10s infinite ease-in-out  ">
+            <img src="./ZOHO/Group 51.svg" alt="marketing"  style="width: 34px; height: 34px;"  >
+         </div>
+         <div style="position: absolute; left: 6%; top: 80px;  animation: vertical-shaking 10s infinite ease-in-out ">
+            <img src="./ZOHO/Group 49.svg" alt="marketing" style="width: 34px; height: 34px;" >
+         </div>
+         <div style="position: absolute; left: 6%; bottom: 118px; animation: vertical-shaking 10s infinite ease-in-out  ">
+            <img src="./ZOHO/Group 52.svg" alt="marketing" style="width: 34px; height: 34px;" >
+         </div>
+      </div>
+     
+      
       <div style="position: relative;">
          <div style="position: absolute; left: -10px;">
-            <img src="ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
          </div>
-         <div class="container" >
+         <div class="container pb-30-custom " >
             <div class="row ">
-               <div class="col-12">
+               <div class="col-12 hero-section-4" >
+               
+                  <ul style="list-style: none;text-align: center; color: #000000; font-size:16px; font-weight:400;" class="fs-14-below-1024">
+                  <li>Unlock smart, scalable marketing with ZoFlowX – certified Zoho marketing automation</li>
+                  <li >Zoho marketing automation agency for B2B & B2C. Sales-</li>
+                  <li >ready leads, CRM integration, and full automation</li>
+               </ul>
+               
+               </div>
+               <div  class="col-12 hero-section-5">
                   <ul style="list-style: none;text-align: center; color: #000000; font-size:16px; font-weight:400;">
                      <li>Unlock smart, scalable marketing with ZoFlowX – certified Zoho marketing automation</li>
                      <li >agency for B2B & B2C. Sales-ready leads, CRM integration, and full automation</li>
                   </ul>
                </div>
                <div class="col-12 container-fluid ">
-                  <div class="d-grid gap-2 col-6  mx-auto" style="padding-bottom: 500px; justify-content: center; display: flex;">
-                     <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1); border-radius:26px; padding: 15px 20px; width: 256px;" type="button">Book Your Free Consultation</button>
+                  <div class="d-grid gap-2 col-6  mx-auto hero-book-btn" >
+                     <button class="btn btn-primary cta-button" type="button" style="white-space: nowrap;">
+                        Book Your Free Consultation
+                      </button>
                   </div>
                </div>
             </div>
@@ -140,521 +1239,558 @@
          </div>
       </div>
       <div
-         class="container-fluid"
-         style=" position: relative; padding-top: 360px; background-image: url(ZOHO/blue-bg.svg); background-repeat: no-repeat; height: 100%; background-size: cover;"
+         class="container-fluid padding-btm-blue "
+        
          >
          <div style="position: absolute; top: 0px;
             right: 0px;">
-            <img src="ZOHO/Ellipse 5 2.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 5 2.svg"  alt="marketing" style="width: 100%; " >
          </div>
          <div style="position: absolute; top: 800px;
             left: 0px; z-index: 1000; ">
-            <img src="ZOHO/Ellipse 7 2.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 7 2.svg"  alt="marketing" style="width: 100%; " >
          </div>
          <div class="dashboard-img">
-            <img src="ZOHO/Dashboard.png" class="card-img-top container-fluid " alt="marketing" width="626px" height="530px" >
+            <img src="./ZOHO/Dashboard.png" class="card-img-top container-fluid " alt="marketing" width="626px" height="530px" >
             <div style="position: absolute; right: -10%; top: -55px; animation: horizontal-shaking 10s infinite ease-in-out; ">
-               <img src="ZOHO/Group 50.svg" alt="marketing"  >
+               <img src="./ZOHO/Group 50.svg" alt="marketing"  >
             </div>
             <div style="position: absolute; right: -30%; top: 70px;  animation: vertical-shaking 10s infinite ease-in-out">
-               <img src="ZOHO/Group 53.svg" alt="marketing"  >
+               <img src="./ZOHO/Group 53.svg" alt="marketing"  >
             </div>
             <div style="position: absolute; right: -18%; bottom: 150px;animation: vertical-shaking 10s infinite ease-in-out  ">
-               <img src="ZOHO/Group 51.svg" alt="marketing"  >
+               <img src="./ZOHO/Group 51.svg" alt="marketing"  >
             </div>
             <div style="position: absolute; left: -24%; top: 50px;  animation: vertical-shaking 10s infinite ease-in-out ">
-               <img src="ZOHO/Group 49.svg" alt="marketing"  >
+               <img src="./ZOHO/Group 49.svg" alt="marketing"  >
             </div>
             <div style="position: absolute; left: -18%; bottom: 118px; animation: vertical-shaking 10s infinite ease-in-out  ">
-               <img src="ZOHO/Group 52.svg" alt="marketing"  >
+               <img src="./ZOHO/Group 52.svg" alt="marketing"  >
             </div>
          </div>
-         <div class="row " style="position: relative;">
-            <div class="col-6">
-               <div class="row container" style="color: white; ">
-                  <div class="col-12" style=" position: relative;">
-                     <h2 class="font-weight:400">ZoFlowX - Zoho Marketing</h2>
-                     <h3 class="font-weight:400">Automation Consultants for</h3>
-                     <h2 style="font-weight:700; font-size:64px">B2B & B2C Growth</h2>
-                     <p style="text-align: start;font-weight: 400;font-size: 24px;line-height: 32px;color: rgba(255, 255, 255, 0.81)">At ZoFlowX, we help B2B and B2C companies unlock scale through powerful, customized Zoho marketing automation services. Whether you're switching from HubSpot or Salesforce — or already using Zoho but not seeing results — our team builds intelligent funnels that convert more leads, faster. </p>
-                     <div style="position: absolute;  z-index:1000; left: 300px; ">
-                        <img src="ZOHO/image 1061.svg" class="card-img-top container-fluid " alt="marketing" >
-                     </div>
-                     <div style="position: absolute; right: -250px; top: 332px;">
-                        <img src="ZOHO/image 1063.svg" class="card-img-top container-fluid " alt="marketing" >
-                     </div>
-                     <div style="position: absolute; 
-                        right: -650px; top: 0px; z-index: 1000; ">
-                        <img src="ZOHO/Ellipse 19 2.svg"  alt="marketing" style="width: 100%; " >
-                     </div>
-                     <div style="position: absolute;right: -601px; top: 8px;">
-                        <img src="ZOHO/image 1062.svg" class="card-img-top container-fluid " alt="marketing">
-                     </div>
-                  </div>
-               </div>
+         <div class="row" style="position: relative;">
+            <div class="col-12 col-xl-6 mobile-padding-top">
+              <div class="row container" style="color: white;">
+                <div class="col-12" style="position: relative;">
+                  <h2 class="responsive-heading" style="font-weight: 400;">ZoFlowX - Zoho Marketing</h2>
+                  <h3 class="responsive-heading" style="font-weight: 400;">Automation Consultants for</h3>
+                  <h2 style=" font-weight: 700; font-size:64px" class="responsive-heading">B2B & B2C Growth</h2>
+                  <p class="zo-description">
+                     At ZoFlowX, we help B2B and B2C companies unlock scale through powerful, customized Zoho marketing automation services. Whether you're switching from HubSpot or Salesforce — or already using Zoho but not seeing results — our team builds intelligent funnels that convert more leads, faster.
+                   </p>
+                  <div class="image-wrapper image-1">
+                     <img src="./ZOHO/image 1061.svg" class="img-fluid" alt="marketing">
+                   </div>
+                   
+                   <div class="image-wrapper image-2">
+                     <img src="./ZOHO/image 1063.svg" class="img-fluid" alt="marketing">
+                   </div>
+                   
+                   <div class="image-wrapper image-3">
+                     <img src="./ZOHO/Ellipse 19 2.svg" alt="marketing" class="img-fluid">
+                   </div>
+                   
+                   <div class="image-wrapper image-4">
+                     <img src="./ZOHO/image 1062.svg" class="img-fluid" alt="marketing">
+                   </div>
+                   
+                </div>
+              </div>
             </div>
-            <div style="position: absolute; top: -86px;">
-               <img src="ZOHO/line.svg" class="card-img-top container-fluid " alt="marketing" >
+            <div class="line-img-wrapper">
+              <img src="./ZOHO/line.svg" class="img-fluid" alt="marketing">
             </div>
-         </div>
+          </div>
          <!-- <div class="row">
             <div class="col-12">
-              <img src="ZOHO/vector 3.png" alt="vector" class="container"/>
+              <img src="./ZOHO/vector 3.png" alt="vector" class="container"/>
             </div>
             </div> -->
-         <div class="container-fluid" style="padding-top: 400px;">
-            <div class="row">
-               <div class="col-12" style="color: rgba(255, 255, 255, 1);text-align: center;">
-                  <h5>Why Choose ZoFlowX as Your </h5>
-                  <h1>
-                  Zoho Marketing Automation Consultants?</h3>
-               </div>
-            </div>
-            <div class="container">
+            <div class="container-fluid why-section">
                <div class="row">
-                  <div class="col-12" style="color: rgba(255, 255, 255, 1);text-align: center;">
-                     <p style="font-weight: 400;font-size: 20px;line-height: 32px;color: rgba(255, 255, 255, 0.81);">We're not just a typical marketing automation agency. We're certified Zoho <br>marketing automation consultants with deep experience in B2B and B2C industries.</p>
-                     <p style="font-weight: 400;font-size: 20px;line-height: 32px;color: rgba(255, 255, 255, 0.81); margin: 0px;">Our clients trust us because we don’t just plug in tools, we architect systems that work.</p>
-                  </div>
+                 <div class="col-12" style="color: rgba(255, 255, 255, 1); text-align: center;">
+                   <h5>Why Choose ZoFlowX as Your</h5>
+                   <h1>Zoho Marketing Automation Consultants?</h1>
+                 </div>
                </div>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-12" style="color: rgba(255, 255, 255, 1); text-align: center;">
+                     <p>We're not just a typical marketing automation agency. We're certified Zoho <br>
+                     marketing automation consultants with deep experience in B2B and B2C industries.</p>
+                     <p style="margin: 0;">Our clients trust us because we don’t just plug in tools, we architect systems that work.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+       
+    <!-- Features Grid -->
+    <div class="container text-center" style="padding-bottom:87px;padding-top: 52px;">
+      <div style="color: #FFFFFF;">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-6 col-md-4">
+            <div class="feature-card">
+              <img src="./ZOHO/Group 1410083731 (4).svg" alt="marketing"  class="section-responsive-img">
+              <div>
+                <p style="white-space: nowrap;  font-size: 30px; font-weight: 700;" class="card-font-large">13+ years <span style="font-size: 24px; margin: 0px; font-weight: 400;" class="card-font-medium">in marketing</span></p>
+                <p style="white-space: nowrap; font-size: 24px; margin: 0px; font-weight: 400;" class="card-font-medium">and automation</p>
+              </div>
             </div>
-         </div>
-         <div class="container text-center" style="padding-bottom:87px;padding-top: 52px;">
-            <div style="color: #FFFFFF;">
-               <!-- Top Row -->
-               <div style="display: flex; gap: 10px; padding-bottom: 10px;">
-                  <!-- Card 1 -->
-                  <div  style="background-color:#5891C70D; width: 33.3%; height: 273px; padding: 33px 55px 55px 31px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;
-                     ">
-                     <img src="ZOHO/Group 1410083731 (4).svg" alt="marketing"
-                        style=" object-fit: contain; display: block; margin: 0 auto 20px; ">
-                     <div class="card-body" style="color: #FFFFFF;">
-                        <p class="card-title" style="font-size: 30px; font-weight: 700;">13+ years <span style="font-size: 24px;
-                           margin: 0px;
-                           font-size: 400;
-                           font-weight: 400;">in marketing</span></p>
-                        <p style="font-size: 24px;
-                           margin: 0px;
-                           font-weight: 400;">and automation</p>
-                     </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div  style="background-color: #5891C70D; width: 33.3%; height: 273px; padding: 33px 28px 28px 20px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;">
-                     <img src="ZOHO/Group 1410083731.svg" alt="Zoho Suite"
-                        style="object-fit: contain; display: block; margin: 0 auto 20px;">
-                     <div  style="color: #FFFFFF;">
-                        <p  style="font-size: 30px; font-weight: 700; margin: 0px;">Full Zoho suite  </p>
-                        <p style="font-size: 30px; font-weight: 700; margin: 0px;">implementation: <span style="font-size: 24px;
-                           margin: 0px;
-                           font-weight: 400;">CRM,</span></p>
-                        <p style="font-size: 24px;
-                           margin: 0px;
-                           font-weight: 400;"> Campaigns, Forms, Flow, One</p>
-                     </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="card" style="background-color: #5891C70D; width: 33.3%; height: 273px; padding: 37px 28px 28px 34px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;">
-                     <img src="ZOHO/Group 1410083731 (1).svg" alt="Strategy"
-                        style="object-fit: contain; display: block; margin: 0 auto 20px; ">
-                     <div  style="color: #FFFFFF;">
-                        <p style="font-size: 24px;margin: 0px;font-weight: 400;">Strategy-first execution from</p>
-                        <p style="font-size: 30px; font-weight: 700; margin: 0px;">certified Zoho experts</p>
-                     </div>
-                  </div>
-               </div>
-               <!-- Bottom Row -->
-               <div style="display: flex; gap: 10px;">
-                  <!-- Card 4 -->
-                  <div class="card" style="background-color: #5891C70D; width: 33.3%; height: 273px; padding: 18px 28px 28px 34px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;">
-                     <img src="ZOHO/Frame (1).svg" alt="Results"
-                        style="object-fit: contain; display: block; margin: 0 auto 20px;">
-                     <div  style="color: #FFFFFF;">
-                        <p style="font-size: 24px;margin: 0px;font-weight: 400;">Proven results: 30% lead </p>
-                        <p style="font-size: 24px;margin: 0px;font-weight: 400;">reactivation, 20% cart recovery</p>
-                     </div>
-                  </div>
-                  <!-- Card 5 -->
-                  <div class="card" style="background-color: #5891C70D; width: 33.3%; height: 273px; padding: 33px 28px 28px 20px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;">
-                     <img src="ZOHO/Group 1410083731 (2).svg" alt="Consultant"
-                        style="object-fit: contain; display: block; margin: 0 auto 20px; ;">
-                     <div style="color: #FFFFFF;">
-                        <p style="font-size: 24px; font-weight: 400;margin: 0px;">One point of contact a</p>
-                        <p style="font-size: 30px;margin: 0px;font-weight: 400;">a dedicated marketing automation consultant</p>
-                     </div>
-                  </div>
-                  <!-- Card 6 -->
-                  <div class="card" style="background-color: #5891C70D; width: 33.3%; height: 273px; padding: 33px 28px 28px 34px; border: 1px solid;
-                     border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
-                     box-shadow: 0px 4px 4px 0px rgba(88, 145, 199, 0.05) inset; border-radius: 20px;">
-                     <img src="ZOHO/Group 1410083731 (3).svg" alt="Results Only"
-                        style="object-fit: contain; display: block; margin: 0 auto 20px;">
-                     <div style="color: #FFFFFF;">
-                        <p style="font-size: 24px; font-weight: 400;margin: 0px;">Done-for-you setup. No </p>
-                        <p style="font-size: 24px; font-weight: 400;margin: 0px;">guesswork. <span style="font-size: 30px; margin: 0px; font-weight: 700;">Only results.</span></p>
-                     </div>
-                  </div>
-               </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="col-6 col-md-4">
+            <div class="feature-card">
+              <img src="./ZOHO/Group 1410083731.svg" alt="Zoho Suite"  class="section-responsive-img">
+              <div>
+                <p style="white-space: nowrap; font-size: 30px; font-weight: 700; margin: 0px;" class="card-font-large">Full Zoho suite</p>
+                <p style="white-space: nowrap; font-size: 30px; font-weight: 700; margin: 0px;" class="card-font-large">implementation: <span style="font-size: 24px; margin: 0px; font-weight: 400;" class="card-font-large">CRM,</span></p>
+                <p style="white-space: nowrap; font-size: 24px; margin: 0px; font-weight: 400;" class="card-font-medium">Campaigns, Forms, Flow, One</p>
+              </div>
             </div>
-         </div>
-         <div class="cotainer" style="padding-bottom: 30px;">
-            <div class="row text-center">
-               <div class="col-12" style="color: #FFFFFF;font-weight: 400;font-size: 48px;line-height: 50px;align-items: baseline;">
-                  <h6 style="color: #FFFFFF;font-weight: 400;font-size: 48px;line-height: 50px;align-items: baseline;">We Automate Your Funnel </h6>
-                  <h3 style="color: #FFFFFF;font-weight: 700;font-size: 48px;line-height: 50px;align-items: baseline;">from Lead to Sale</h3>
-               </div>
-               <div class="col-12" style="color: rgba(255, 255, 255, 1);text-align: center;">
-                  <p style="font-weight: 400;font-size: 20px;line-height: 32px;color: rgba(255, 255, 255, 0.81); margin: 0;">As certified marketing automation specialists, we design and build smart,<br> scalable workflows that do the heavy lifting for your marketing team.</p>
-               </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="col-6 col-md-4">
+            <div class="feature-card">
+              <img src="./ZOHO/Group 1410083731 (1).svg" alt="Strategy"  class="section-responsive-img">
+              <div>
+                <p style="white-space: nowrap; font-size: 24px;margin: 0px;font-weight: 400;"  class="card-font-medium">Strategy-first execution from</p>
+                <p style="white-space: nowrap; font-size: 30px; font-weight: 700; margin: 0px;"  class="card-font-large">certified Zoho experts</p>
+              </div>
             </div>
-         </div>
-         <div class="container" style="padding-bottom: 500px; position: relative;">
-            <div class="row " style="background-color: #FFFFFF;border-radius: 48px;display: flex; justify-content: center; padding: 50px;">
-               <div class="col-6" style="display: block;margin-left: auto;margin-right: auto;height: auto;">
-                  <div >
-                     <img src="ZOHO/Group 1410083736.svg" width="490px" height="490px"/>
-                     <!-- <img src="ZOHO/image.png" alt="service" /> -->
-                  </div>
+          </div>
+             <!-- Card 4 -->
+             <div class="col-6 col-md-4">
+               <div class="feature-card">
+                 <img src="./ZOHO/Frame (1).svg" alt="Results" class="section-responsive-img">
+                 <div>
+                   <p style="white-space: nowrap; font-size: 24px;margin: 0px;font-weight: 400;"  class="card-font-medium">Proven results: 30% lead</p>
+                   <p style="white-space: nowrap; font-size: 24px;margin: 0px;font-weight: 400;"  class="card-font-medium">reactivation, 20% cart recovery</p>
+                 </div>
                </div>
-               <div class="col-6" style="display: flex;flex-direction: column; justify-content: center; align-items: start;">
-                  <div>
-                     <h6>
-                        What You Get with Our 
-                        <h4>Zoho Marketing Automation Services</h4>
-                     </h6>
-                     <ul class="fs-6">
-                  </div>
-                  <li>Capture, nurture, and qualify leads across all touchpoints</li>
-                  <li>Trigger campaigns based on user behavior and preferences</li>
-                  <li>Run email, SMS, and push campaigns from one unified place</li>
-                  <li>Track site activity to send personalized follow-ups</li>
-                  <li>Segment and score leads to focus on high-intent B2B buyers</li>
-                  <li>Integrate with Zoho CRM for seamless handoff to sales</li>
-                  <li>Optimize campaign performance with A/B testing and real-time reporting</li>
-                  </ul>
+             </div>
+             
+             <!-- Card 5 -->
+             <div class="col-6 col-md-4">
+               <div class="feature-card">
+                 <img src="./ZOHO/Group 1410083731 (2).svg" alt="Consultant" class="section-responsive-img">
+                 <div>
+                   <p style="white-space: nowrap; font-size: 24px; font-weight: 400;margin: 0px;"  class="card-font-medium">One point of contact a</p>
+                   <p style="white-space: nowrap; font-size: 30px;margin: 0px;font-weight: 700;"  class="card-font-large">dedicated marketing </p>
+                   <p style="white-space: nowrap; font-size: 30px;margin: 0px;font-weight: 700;"  class="card-font-large"> automation consultant</p>
+                 </div>
                </div>
-            </div>
-            <!-- <div class="col-12" style="text-align: center ; position: absolute; bottom: -115px;">
-               <img src="ZOHO/Ellipse9.svg" alt="sale" style="height: 80%;width: 80%;"/>
-               </div> -->
-         </div>
+             </div>
+             
+             <!-- Card 6 -->
+             <div class="col-6 col-md-4">
+               <div class="feature-card">
+                 <img src="./ZOHO/Group 1410083731 (3).svg" alt="Results Only" class="section-responsive-img">
+                 <div>
+                   <p style="white-space: nowrap; font-size: 24px; font-weight: 400;margin: 0px;"  class="card-font-medium">Done-for-you setup. No</p>
+                   <p style="white-space: nowrap; font-size: 24px; font-weight: 400;margin: 0px;" class="card-font-medium">guesswork. <span style="font-size: 30px; margin: 0px; font-weight: 700;" class="card-font-large">Only results.</span></p>
+                 </div>
+               </div>
+             </div>
+        </div>
+        
+       
+       
+       
       </div>
-      <div style="position: relative;">
-         <div class="container" style="background-repeat: no-repeat; ">
-            <div class="row">
-               <div class="gap-2 col-12 mx-auto text-center" style="padding-top: 130px;
-                  padding-bottom: 130px; position: relative; z-index: 1;">
-                  <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Book Your Free Consultations</button>          
-               </div>
-            </div>
-         </div>
-         <div  style="text-align: center ; position: absolute; bottom: 105px; width: 100%; z-index: 0;">
-            <img src="ZOHO/Mask group (1).svg" alt="sale" style="width: 100%;"/>
-         </div>
+    </div>
+
+       <!-- Top Section -->
+<div class="container" style="padding-bottom: 30px;">
+   <div class="row text-center">
+     <div class="col-12">
+       <h6 class="heading-sub">We Automate Your Funnel</h6>
+       <h3 class="heading-main">from Lead to Sale</h3>
+     </div>
+     <div class="col-12">
+       <p class="description-text">
+         As certified marketing automation specialists, we design and build smart,<br class="d-none d-md-inline"> scalable workflows that do the heavy lifting for your marketing team.
+       </p>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Main Service Section -->
+ <div class="container service-block-wrapper" >
+   <div class="row service-block">
+     <div class="col-12 col-md-6 text-center">
+       <img src="./ZOHO/Group 1410083736.svg" class="img-fluid service-image" alt="Zoho Service Image">
+     </div>
+     <div class="col-12 col-md-6 service-text">
+       <h6 class="subheading">What You Get with Our</h6>
+       <h4 class="mainheading">Zoho Marketing Automation Services</h4>
+       <ul class="fs-6">
+         <li>Capture, nurture, and qualify leads across all touchpoints</li>
+         <li>Trigger campaigns based on user behavior and preferences</li>
+         <li>Run email, SMS, and push campaigns from one unified place</li>
+         <li>Track site activity to send personalized follow-ups</li>
+         <li>Segment and score leads to focus on high-intent B2B buyers</li>
+         <li>Integrate with Zoho CRM for seamless handoff to sales</li>
+         <li>Optimize campaign performance with A/B testing and real-time reporting</li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ 
       </div>
+      <div class="cta-wrapper position-relative">
+         <div class="container">
+           <div class="row">
+             <div class="gap-2 col-12 mx-auto text-center cta-button-block">
+               <button class="btn btn-primary cta-button" type="button">
+                 Book Your Free Consultations
+               </button>
+             </div>
+           </div>
+         </div>
+       
+         <div class="cta-image-wrapper">
+           <img src="./ZOHO/Mask group (1).svg" alt="sale" class="cta-bg-image">
+         </div>
+       </div>
+       
       <div style="position: relative;">
          <div style="position: absolute; left: -10px; top: -300px;">
-            <img src="ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
          </div>
          <div style="position: absolute; top: -400px;
             right: -0px; z-index: 0;">
-            <img src="ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
          </div>
       </div>
       <div style="position: relative;">
          <div style="position: absolute; top: 600px;
             left: 0px;">
-            <img src="ZOHO/Ellipse 13.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 13.svg"  alt="marketing" style="width: 100%; " >
          </div>
          <div style="position: absolute; top: 600px;
             right: 0px;">
-            <img src="ZOHO/Ellipse 12.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 12.svg"  alt="marketing" style="width: 100%; " >
          </div>
       </div>
       <div class="container" style="margin-top: 10px;">
-         <div class="row">
-            <div class=" text-center">
-               <h6 style="font-size: 48px; font-weight: 400;">Our Core Zoho Marketing </h6>
-               <h3 style="font-size: 48px; font-weight: 700;">Automation Services</h3>
-               <p style="font-size: 20px; font-weight: 400; margin: 0px;">As a trusted Zoho marketing automation agency, we offer done-</p>
-               <p style="font-size: 20px; font-weight: 400;">for-you and strategic support across:</p>
-            </div>
+         <!-- Core Services Section -->
+  <div class="container" style="margin-top: 50px;">
+   <div class="row">
+     <div class="col-12 text-center">
+       <h6 style="font-size: 48px; font-weight: 400;" class="core-title">Our Core Zoho Marketing</h6>
+       <h3 style="font-size: 48px; font-weight: 700;"  class="core-title">Automation Services</h3>
+       <p style="font-size: 20px; font-weight: 400;"  class="core-desc">
+         As a trusted Zoho marketing automation agency, we offer done-for-you and strategic support across:
+       </p>
+     </div>
+   </div>
+   <div class="row">
+      <div class="col-12 col-xl-4 mb-4">
+       <div class="service-box" style="background: rgba(226, 240, 255, 1); position: relative; z-index: 1;">
+         <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">
+           Zoho CRM + <br>Campaign Automation
          </div>
-         <div class="row">
-            <div class="col-4">
-               <div  style="background: rgba(226, 240, 255, 1);border-radius: 28px; padding: 36px 24px 16px 22px; min-height:484px">
-                  <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">Zoho CRM + <br>Campaign Automation</div>
-                  <div class="flex flex-row gap-2">
-                     <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 44px;">We build lifecycle journeys that move leads from cold to close using personalized workflows across email, SMS, and behavior-based triggers.</p>
-                     <img src="ZOHO/image (2).svg" style="width: 100%;" alt="...">
-                  </div>
-               </div>
-            </div>
-            <div class="col-4">
-               <div style="background: rgba(254, 236, 223, 1);border: none;border-radius: 29px; padding: 36px 24px 24px 22px; position: relative; min-height: 484px;">
-                  <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">Sales Automation <br> That Works</div>
-                  <div class="flex flex-row gap-2">
-                     <!-- <h5 class="card-title">Sales Automation <br> That Works</h5> -->
-                     <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 44px;">Looking for a sales automation agency that doesn’t just “set up” pipelines, but drives revenue? We streamline handoffs from marketing to sales inside Zoho CRM, with smart scoring and real-time sync.</p>
-                     <img src="ZOHO/image (3).svg" alt="..." style="position: absolute;
-                        /* top: 0px; */
-                        bottom: 0px;
-                        left: 0px;
-                        width: 100%;">
-                  </div>
-               </div>
-            </div>
-            <div class="col-4">
-               <div style="background: rgba(254, 223, 223, 1);border: none;border-radius: 29px; padding: 36px 24px 16px 22px;  min-height: 484px; position: relative; z-index: 1;">
-                  <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">Zoho One Setup &  <br> Optimization </div>
-                  <div class="flex flex-row gap-2">
-                     <!-- <h5 class="card-title">Sales Automation <br> That Works</h5> -->
-                     <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 24px;">New to Zoho? Or using multiple platforms that don’t talk to each other? We’ll help you consolidate your tech stack with Zoho One, aligned to your marketing & sales goals.
-                     </p>
-                     <img src="ZOHO/image (4).svg" alt="..." style="
-                        width: 100%;">
-                  </div>
-               </div>
-            </div>
+         <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 44px;">
+           We build lifecycle journeys that move leads from cold to close using personalized workflows across email, SMS, and behavior-based triggers.
+         </p>
+         <img src="./ZOHO/image (2).svg"  alt="..." class="img-wrap-fluid">
+       </div>
+     </div>
+     
+     <div class="col-12 col-xl-4 mb-4">
+       <div class="service-box" style="background: rgba(254, 236, 223, 1); position: relative;">
+         <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">
+           Sales Automation <br> That Works
          </div>
-         <div class="container text-center" style="padding-top: 102px; padding-bottom: 52px;" >
-            <div class="row">
-               <div class="col-12">
-                  <p style="font-size: 48px; font-weight: 400; margin-bottom: 0px;">Work With a Marketing <br> Automation Specialist,</p>
-                  <h5 style="font-size: 48px; font-weight: 700;">Not Just a Platform Reseller</h5>
-                  <div style="display: flex; justify-content: center;">
-                     <p style="font-size: 20px; font-weight: 400; width: 690px; text-align: center;"> There’s a big difference between hiring a vendor and working with a strategist. We’re more than Zoho implementers we’re your marketing automation consultants, growth partners, and funnel architects.</p>
-                  </div>
-               </div>
-            </div>
+         <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 44px;">
+           Looking for a sales automation agency that doesn't just "set up" pipelines, but drives revenue? We streamline handoffs from marketing to sales inside Zoho CRM, with smart scoring and real-time sync.
+         </p>
+         <img src="./ZOHO/image (3).svg" alt="..."  style="position: absolute; bottom: 0px; left: 0px; width: 100%;">
+       </div>
+     </div>
+     
+     <div class="col-12 col-xl-4 mb-4">
+       <div class="service-box" style="background: rgba(254, 223, 223, 1); position: relative; z-index: 1;">
+         <div style="font-size: 28px; font-weight: 500; text-align: left; margin-bottom: 10px;">
+           Zoho One Setup & <br> Optimization
          </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <img src="ZOHO/Group 38.svg" alt="" style="width: 100%"/>
-               </div>
-            </div>
-         </div>
-         <div class="cotainer">
-            <div class="row">
-               <div class="col-12 text-center">
-                  <h6 style="font-size: 48px; font-weight: 400; margin-bottom: 0px;">Need Zoho One?</h6>
-                  <h4 style="font-size: 64px; font-weight: 700;">Get Started Today</h4>
-                  <p style="font-size: 16px; font-weight: 400; margin-bottom: 32px; ">New to Zoho? Sign up for Zoho One through our official partner link to get <br> started with a unified business operating system.
-                     Sign Up for Zoho One
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="gap-2 col-12 mx-auto text-center">
-                     <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Sign Up for Zoho One</button>          
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row" >
-               <div class="col-12 text-center" style="position: relative;">
-                  <img src="ZOHO/Group 1410083753.svg" alt="business" style="width: 80%;height: 80%;"/>
-                  <div style="position: absolute; right: 18%; top: 80px;  animation: horizontal-shaking 10s infinite ease-in-out;">
-                     <img src="ZOHO/Group 50.svg" alt="marketing"  >
-                  </div>
-                  <div style="position: absolute; right: 8%; top: 180px;  animation: vertical-shaking 10s infinite ease-in-out;">
-                     <img src="ZOHO/Group 53.svg" alt="marketing"  >
-                  </div>
-                  <div style="position: absolute; right: 11%; bottom: 190px;  animation: vertical-shaking 10s infinite ease-in-out;">
-                     <img src="ZOHO/Group 51.svg" alt="marketing"  >
-                  </div>
-                  <div style="position: absolute; left: 20%; top: 202px;  animation: vertical-shaking 10s infinite ease-in-out;">
-                     <img src="ZOHO/Group 49.svg" alt="marketing"  >
-                  </div>
-                  <div style="position: absolute; left: 19%; bottom: 140px;  animation: vertical-shaking 10s infinite ease-in-out;">
-                     <img src="ZOHO/Group 52.svg" alt="marketing"  >
-                  </div>
-               </div>
-            </div>
-         </div>
+         <p style="font-size: 16px; font-weight: 400; text-align: left; margin-bottom: 24px;">
+           New to Zoho? Or using multiple platforms that don't talk to each other? We'll help you consolidate your tech stack with Zoho One, aligned to your marketing & sales goals.
+         </p>
+         <img src="./ZOHO/image (4).svg" alt="..."  class="img-wrap-fluid">
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- Specialist Section -->
+ <div class="container text-center" style="padding-top: 80px; padding-bottom: 50px;">
+   <div class="row">
+     <div class="col-12">
+       <p style=" font-weight: 400; margin-bottom: 0px;" class="responsive-title">Work With a Marketing <br> Automation Specialist,</p>
+       <h5 style=" font-weight: 700;" class="responsive-title">Not Just a Platform Reseller</h5>
+       <div style="display: flex; justify-content: center;">
+         <p style=" font-weight: 400; max-width: 690px; text-align: center;" class="responsive-description">
+           There's a big difference between hiring a vendor and working with a strategist. We're more than Zoho implementers we're your marketing automation consultants, growth partners, and funnel architects.
+         </p>
+       </div>
+     </div>
+   </div>
+ </div>
+        <!-- Process Image -->
+  <div class="container">
+   <div class="row">
+     <div class="col-12">
+       <img src="./ZOHO/Group 38.svg" alt="" style="width: 100%;"/>
+     </div>
+   </div>
+ </div>
+
+ <!-- Zoho One Section -->
+ <div class="container">
+   <div class="row">
+     <div class="col-12 text-center">
+       <h6 style="font-size: 48px; font-weight: 400; margin-bottom: 0px;" class="responsive-title">Need Zoho One?</h6>
+       <h4 style="font-size: 64px; font-weight: 700;" class="responsive-title">Get Started Today</h4>
+       <p style="font-size: 16px; font-weight: 400; margin-bottom: 32px;" class="responsive-description">
+         New to Zoho? Sign up for Zoho One through our official partner link to get <br class="d-none d-md-block"> started with a unified business operating system.
+       </p>
+     </div>
+   </div>
+ </div>
+
+ <!-- Sign Up Button -->
+ <div class="container">
+   <div class="row">
+     <div class="col-12">
+       <div class="gap-2 col-12 mx-auto text-center">
+         <button class="btn btn-primary" style="background-color: rgba(34, 108, 179, 1);border-radius: 25px;" type="button">Sign Up for Zoho One</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- Business Image -->
+ <div class="container">
+   <div class="row">
+     <div class="col-12 text-center" style="position: relative; margin-top: 50px; z-index: 1;">
+       <img src="./ZOHO/Group 1410083753.svg" alt="business" style="width: 80%;height: 80%;" class="bussiness-img"/>
+   <!-- Group 50 -->
+<div class="floating-img group-50">
+   <img src="./ZOHO/Group 50.svg" alt="marketing">
+ </div>
+ 
+ <!-- Group 53 -->
+ <div class="floating-img group-53">
+   <img src="./ZOHO/Group 53.svg" alt="marketing">
+ </div>
+ 
+ <!-- Group 51 -->
+ <div class="floating-img group-51">
+   <img src="./ZOHO/Group 51.svg" alt="marketing">
+ </div>
+ 
+ <!-- Group 49 -->
+ <div class="floating-img group-49">
+   <img src="./ZOHO/Group 49.svg" alt="marketing">
+ </div>
+ 
+ <!-- Group 52 -->
+ <div class="floating-img group-52">
+   <img src="./ZOHO/Group 52.svg" alt="marketing">
+ </div>
+ 
+     </div>
+   </div>
+ </div>
       </div>
       <div style="position: relative;">
          <div style="position: absolute; left: -100px; top: -600px;">
-            <img src="ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
          </div>
       </div>
       <div style="position: relative;">
          <div style="position: absolute; top: -400px;
             right: 0px; z-index: 0;">
-            <img src="ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
          </div>
       </div>
       <div style="position: relative;">
          <div style="position: absolute; top: 400px; left: 0px; z-index: 0;">
-            <img src="ZOHO/Ellipse 22.svg" alt="marketing" style="width: 100%;">
+            <img src="./ZOHO/Ellipse 22.svg" alt="marketing" style="width: 100%;">
          </div>
       </div>
       <div style="position: relative;" >
          <div style="position: absolute; top: 1200px; right: 0px;
             ; z-index: 0;">
-            <img src="ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
+            <img src="./ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
          </div>
       </div>
       <div class="container">
          <div class="row">
-            <div class="col-12 text-center z-index:1">
-               <h4 style="font-size: 48px; font-weight: 400; margin-bottom: 10px;">Who We Work With</h4>
-               <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; line-height: 32px; padding-bottom: 28px;">Our marketing automation services are built for scale- <br>oriented businesses across:</p>
+            <div class="col-12 text-center" style="z-index:1;">
+              <h4 class="responsive-title" style="font-weight: 400; margin-bottom: 10px;">Who We Work With</h4>
+              <p class="responsive-description" style=" margin-bottom: 0; font-weight: 400; margin-bottom: 0px; line-height: 32px; white-space: nowrap;">
+                Our marketing automation services are built for scale
+              </p>
+              <p class="responsive-description" style=" margin-bottom: 0; font-weight: 400; margin-bottom: 0px; line-height: 32px; padding-bottom: 28px; white-space: nowrap;">
+              oriented businesses across:
+             </p>
             </div>
-         </div>
+          </div>
+          
          <div class="container" style="position: relative;">
             <div class="row">
-               <div class="col-6">
-                  <div style="background: white; padding: 44px 122px 54px 122px; border-radius: 20px; border: 3px solid rgba(227, 227, 227, 1); height: 486px;">
-                     <img src="ZOHO/image (5).svg" alt=""  style="width:100%; padding-bottom:40px;" />
-                     <p style="font-size: 32px; font-weight: 500; margin-bottom: 0px; line-height: 32px;">SaaS companies scaling outbound and inbound</p>
-                  </div>
+               <!-- Box 1 -->
+               <div class="col-xl-6 col-12 mb-4">
+                 <div class="responsive-box">
+                   <img src="./ZOHO/image (5).svg" alt="" class="responsive-img" />
+                   <p class="responsive-text" style="white-space: nowrap;">SaaS companies scaling </p>
+                   <p class="responsive-text" style="white-space: nowrap;">outbound and inbound</p>
+                 </div>
                </div>
-               <div class="col-6" style="position: relative;">
-                  <div style=" position: relative;  z-index: 1; background: white; padding: 44px 122px 54px 122px; border-radius: 20px; border: 3px solid rgba(227, 227, 227, 1); height: 486px;">
-                     <img src="ZOHO/image (6).svg" alt=""  style="width:100%; padding-bottom:40px;" />
-                     <p style="font-size: 32px; font-weight: 500; margin-bottom: 0px; line-height: 32px;">B2B and B2C tech and consulting firms
-                     </p>
-                  </div>
+             
+               <!-- Box 2 -->
+               <div class="col-xl-6 col-12 mb-4">
+                 <div class="responsive-box">
+                   <img src="./ZOHO/image (6).svg" alt="" class="responsive-img" />
+                   <p class="responsive-text" style="white-space: nowrap;">B2B and B2C tech and </p>
+                   <p class="responsive-text"style="white-space: nowrap;"> consulting firms</p>
+                 </div>
                </div>
-               <div class="col-6" style="padding-top: 24px; position: relative;">
-                  <!-- Absolute image behind white box -->
-                  <!-- White box content -->
-                  <div style="background: white; padding: 40px 96px 44px 96px; border-radius: 20px; border: 3px solid rgba(227, 227, 227, 1); height: 486px; position: relative; z-index: 1;">
-                     <img src="ZOHO/image (7).svg" alt="" style="width:100%; height: 80%;" />
-                     <p style="font-size: 32px; font-weight: 500; margin-bottom: 0px; line-height: 32px;">
-                        eCommerce and DTC brands (especially for cart recovery & reactivation)
-                     </p>
-                  </div>
+             
+               <!-- Box 3 -->
+               <div class="col-xl-6 col-12 mb-4">
+                 <div class="responsive-box">
+                   <img src="./ZOHO/image (7).svg" alt="" class="responsive-img" style="height: 80%;" />
+                   <p class="responsive-text "style="white-space: nowrap;">eCommerce and DTC </p>
+                   <p class="responsive-text" style="white-space: nowrap;"> brands (especially for  cart</p>
+                   <p class="responsive-text" style="white-space: nowrap;"> recovery & reactivation)</p>
+                 </div>
                </div>
-               <div class="col-6" style="padding-top: 24px; position: relative;  z-index: 1;">
-                  <div style=" position: relative;  z-index: 1; background: white; padding: 44px 122px 54px 122px; border-radius: 20px; border: 3px solid rgba(227, 227, 227, 1);height: 486px;">
-                     <img src="ZOHO/image (8).svg" alt=""  style="width:100%; padding-bottom:40px;" />
-                     <p style="font-size: 32px; font-weight: 500; margin-bottom: 0px; line-height: 32px;">Service providers automating their nurture & upsell flows
-                     </p>
-                  </div>
+             
+               <!-- Box 4 -->
+               <div class="col-xl-6 col-12 mb-4">
+                 <div class="responsive-box">
+                   <img src="./ZOHO/image (8).svg" alt="" class="responsive-img" />
+                   <p class="responsive-text" style="white-space: nowrap;">Service providers automating </p>
+                   <p class="responsive-text" style="white-space: nowrap;">their nurture & upsell flows</p>
+                 </div>
                </div>
-            </div>
+             </div>
+             
          </div>
          <div class="container">
             <div class="row">
-               <div class="col-12 text-center" style="padding-top: 144px; padding-bottom: 30px;  display: flex; flex-direction: column;align-items: center;  justify-content: center;">
-                  <h4 style="font-size: 48px; font-weight: 700;"><span style="font-size: 48px; font-weight: 400;">How We</span> Deliver Results</h4>
-                  <p style="font-size: 20px; font-weight: 400; margin-bottom: 32px; text-align: center; width: 630px; ">You’ll get a dedicated team led by a Zoho-certified marketing automation specialist. From day one, we work on strategy, tech, messaging, and outcomes not fluff.
-                     Sign Up for Zoho One
-                  </p>
-               </div>
+              <div class="col-12 text-center section-heading">
+                <h4>
+                  <span class="light-heading">How We</span> Deliver Results
+                </h4>
+                <p class="section-subtext">
+                  You’ll get a dedicated team led by a Zoho-certified marketing automation specialist. From day one, we work on strategy, tech, messaging, and outcomes not fluff.
+                  Sign Up for Zoho One
+                </p>
+              </div>
             </div>
-         </div>
+          </div>
+          
+          <div class="container">
+            <div class="row pb-5 pb-xl-0" style="padding-bottom: 142px;">
+              
+              <div class="col-12 col-lg-4 mb-4">
+                <div style="position: relative; z-index:1; background: rgba(248, 248, 248, 1); border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 24px; min-height: 208px; display: flex;flex-direction: column; justify-content: center; gap: 4px;">
+                  <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
+                    <img src="./ZOHO/Frame (2).svg" alt="business" />
+                  </div>
+                  <p class="stat-subtitle">Onboarding in</p>
+                  <h4 class="stat-title">under 7 days</h4>
+                </div>
+              </div>
+          
+              <div class="col-12 col-lg-4 mb-4">
+                <div style="position: relative; z-index:1; background: rgba(248, 248, 248, 1); border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 24px; min-height: 208px; display: flex;flex-direction: column; justify-content: center; gap: 4px;">
+                  <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
+                    <img src="./ZOHO/Group.svg" alt="business" />
+                  </div>
+                  <p class="stat-subtitle">Zoho workflows <span class="stat-title">running</span></p>
+                  <h4 class="stat-title">in 2-3 weeks</h4>
+                </div>
+              </div>
+          
+              <div class="col-12 col-lg-4 mb-4 ">
+                <div style=" position: relative; z-index:1; background: rgba(248, 248, 248, 1); border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 24px; min-height: 208px; display: flex;flex-direction: column; justify-content: center;   ">
+                  <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
+                    <img src="./ZOHO/Group (1).svg" alt="business" />
+                  </div>
+                  <p class="stat-subtitle">Results <span class="stat-title">within 30 days</span></p>
+                  <h4 class="stat-note">(lead engagement, reactivation, cart recovery)</h4>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
          <div class="container">
-            <div class="row" style="padding-bottom: 142px;">
-               <div class="col-4">
-                  <div style="background: rgba(227, 227, 227, 1);border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 35px 35px 29px 35px;">
-                     <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
-                        <img src="ZOHO/Frame (2).svg" alt="business" />
-                     </div>
-                     <p style="font-size: 24px; font-weight: 400; margin-bottom: 0px;">Onboarding in </p>
-                     <h4 style="font-size: 32px; font-weight: 700; margin-bottom: 0px;">
-                        under 7 days
-                     </h4>
-                  </div>
-               </div>
-               <div class="col-4" style="position: relative;">
-                  <div style=" position: relative; z-index: 1;background: rgba(227, 227, 227, 1);border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 38px 35px 24px 37px;">
-                     <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
-                        <img src="ZOHO/Group.svg" alt="business" />
-                     </div>
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px;line-height: 34px;">Zoho workflows <span style="font-size: 32px; font-weight: 700; margin-bottom: 0px;">running </span> 
-                     </p>
-                     <h4 style="font-size: 32px; font-weight: 700; margin-bottom: 0px;">
-                        in 2-3 weeks
-                     </h4>
-                  </div>
-               </div>
-               <div class="col-4">
-                  <div style="position: relative; z-index: 1;background: rgba(227, 227, 227, 1); border: 1px solid rgba(227, 227, 227, 1); border-radius: 20px; padding: 35px 35px 19px 37px;">
-                     <div style="background: white; padding: 12px; border: 1px solid rgba(227, 227, 227, 1); border-radius: 14px; width: max-content;">
-                        <img src="ZOHO/Group (1).svg" alt="business" />
-                     </div>
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; line-height: 34px;">Results  <span  style="font-size: 32px; font-weight: 700; margin-bottom: 0px;">within 30 days </span>
-                     </p>
-                     <h4 style="font-size: 20px; font-weight: 400; margin-bottom: 0px;">
-                        (lead engagement, reactivation, cart recovery)
-                     </h4>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="cotainer">
             <div class="row">
-               <div class="col-12 text-center" style=" padding-top: 144px; padding-bottom: 30px;  display: flex; flex-direction: column;align-items: center;  justify-content: center;">
-                  <h4 style="font-size: 48px; font-weight: 400;">Free Templates & 
+               <div class="col-12 text-center automation-section" style=" padding-top: 144px; padding-bottom: 30px;  display: flex; flex-direction: column;align-items: center;  justify-content: center;">
+                  <h4 style="font-size: 48px; font-weight: 400;" class="responsive-title">Free Templates & 
                   </h4>
-                  <div style="font-size: 48px; font-weight: 700; margin-bottom: 32px; text-align: center;  position: relative;">
+                  <div class="responsive-title" style="font-size: 48px; font-weight: 700; margin-bottom: 32px; text-align: center;  position: relative;">
                      Automation Blueprints
-                     <div style="position: absolute ; bottom: -62px; right:-120px">
-                        <img src="ZOHO/Group 43.svg" alt="business" />
+                     <div style="position: absolute ; bottom: -62px; right:-120px " class="coming-absolute">
+                        <img src="./ZOHO/Group 43.svg" alt="business" class="coming-responsive" />
                      </div>
                   </div>
                </div>
             </div>
          </div>
          <div class="container text-align: center;">
-            <div class="row" style="padding-bottom: 330px;">
-               <div class="col-3">
+            <div class="row  custom-pb-lg">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
                   <div style="position: relative; z-index: 1;background: rgba(255, 255, 255, 1);border: 1px solid;
                      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
                      box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
                      border-radius: 18px;
-                     padding: 35px 35px 30px 35px;">
-                     <img src="ZOHO/image (10).svg" alt="business" style="width: 100%;" />
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; padding-top: 21px; text-align: center; width: 210px;  margin: auto;">Lifecycle Journey Email Templates </p>
+                     padding: 35px 35px 30px 35px;" class="saas-section-wrap">
+                     <img src="./ZOHO/image (10).svg" alt="business" style="width: 100%;" />
+                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; padding-top: 21px; text-align: center; width: 210px;  margin: auto;" class="saas-section">Lifecycle Journey Email Templates </p>
+                     
                   </div>
                </div>
-               <div class="col-3">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
                   <div style="background: rgba(255, 255, 255, 1);border: 1px solid;
                      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
                      box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
                      border-radius: 18px;
-                     padding: 23px 23px 48px 23px;">
-                     <img src="ZOHO/image (11).svg" alt="business" style="width: 100%;" />
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; padding-top: 31px; text-align: center;">Email Audit Checklist 
+                     padding: 23px 23px 48px 23px; position: relative; z-index: 1;" class="saas-section-wrap">
+                     <img src="./ZOHO/image (11).svg" alt="business" style="width: 100%;" />
+                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px; padding-top: 31px; text-align: center;" class="saas-section">Email Audit Checklist 
                      </p>
                   </div>
                </div>
-               <div class="col-3">
+               <div class="col-6  col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
                   <div style="background: rgba(255, 255, 255, 1);border: 1px solid;
                      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
                      box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
                      border-radius: 18px;
-                     padding: 23px 23px 30px 23px;">
-                     <img src="ZOHO/image (14).svg" alt="business" style="width: 100%;"  />
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px;  padding-top: 21px; text-align: center; width: 187px; margin: auto;">Automation Strategy Guide  
+                     padding: 23px 23px 30px 23px; position: relative; z-index: 1;" class="saas-section-wrap">
+                     <img src="./ZOHO/image (14).svg" alt="business" style="width: 100%;"  />
+                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px;  padding-top: 21px; text-align: center; width: 187px; margin: auto;" class="saas-section">Automation Strategy Guide  
                      </p>
                   </div>
                </div>
-               <div class="col-3">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
                   <div style="background: rgba(255, 255, 255, 1); border: 1px solid;
                      border-image-source: linear-gradient(217.43deg, rgba(153, 153, 153, 0.028) 21.68%, rgba(255, 255, 255, 0.28) 88.23%);
                      box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
                      border-radius: 18px;
-                     padding: 23px 23px 44px 23px;;">
-                     <img src="ZOHO/image (15).svg" alt="business" style="width: 100%;" />
-                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px;   padding-top: 33px; text-align: center;">Zoho Setup Checklist  
+                     padding: 23px 23px 44px 23px; position: relative; z-index: 1;" class="saas-section-wrap">
+                     <img src="./ZOHO/image (15).svg" alt="business" style="width: 100%;" />
+                     <p style="font-size: 20px; font-weight: 400; margin-bottom: 0px;   padding-top: 33px; text-align: center;" class="saas-section">Zoho Setup Checklist  
                      </p>
                   </div>
                </div>
@@ -663,119 +1799,130 @@
          <!-- l -->
       </div>
       <!-- ll -->
-      <div   style="color:#FFFFFF; position: relative; background-image: url(ZOHO/Ellipse17.svg); background-repeat: no-repeat; background-size: cover; height: 100%; ">
-         <img src="ZOHO/Revenue-cuate 1.svg" style="position: absolute; top: -271px;
-            position: absolute;
-            left: 450px;"/>
+      <div   style="color:#FFFFFF; position: relative; background-image: url(./ZOHO/Ellipse17.svg); background-repeat: no-repeat; background-size: cover; height: 100%; background-position-x: center; ">
+         <img src="./ZOHO/Revenue-cuate 1.svg" class="dev-img" />
          <div style="position: relative;">
             <div style="position: absolute; left: -10px; top: -400px;">
-               <img src="ZOHO/Ellipse 22.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
+               <img src="./ZOHO/Ellipse 22.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
             </div>
          </div>
          <div style="position: relative;">
             <div style="position: absolute; left: -10px; top: -900px; z-index: 0;">
-               <img src="ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
+               <img src="./ZOHO/Ellipse 1.svg" class="card-img-top container-fluid" alt="marketing" style="width: 100%; " >
             </div>
          </div>
-         <div class="container" style="padding-top: 342px;">
+         <div class="container responsive-container" style="padding-top: 342px; position: relative; z-index: 1;">
             <div class="row">
-               <div class="col-12 text-center">
-                  <h4 style="font-size: 64px; font-weight: 400; margin-bottom: 10px;">
-                     Let’s Design 
-                     <spam style="font-size: 64px; font-weight: 700; margin-bottom: 10px;">Your</spam>
-                  </h4>
-                  <p style="font-size: 64px; font-weight: 700; margin-bottom: 0px; line-height: 32px; padding-bottom: 28px;">Revenue Engine</p>
-                  <p style="font-size: 20px; font-weight: 400; line-height: 27px; width: 542px; margin: auto; text-align: center;">Whether you need a full-scale Zoho marketing automation agency or just want expert advice from a marketing automation consultant, we’re here to help.
-                  </p>
-                  <div  style="
-                     color:#FFFFFF;
-                     text-align: center;
-                     align-self: center;; padding-top: 28px; padding-bottom: 28px;">
-                     <button type="button" class="btn" style="color:#FFFFFF; background-color: rgba(34, 108, 179, 1); border-radius: 26px;">Book Your Free Consultation</button>
-                  </div>
-               </div>
+              <div class="col-12 text-center">
+                <h4 class="footer-responive-title" style="font-size: 64px; font-weight: 400; margin-bottom: 10px;">
+                  Let’s Design 
+                  <span class="footer-responive-title" style="font-size: 64px; font-weight: 700;">Your</span>
+                </h4>
+                <p class="footer-responive-title" style="font-size: 64px; font-weight: 700; line-height: 32px; padding-bottom: 28px; margin-bottom: 0;">
+                  Revenue Engine
+                </p>
+                <p class="responsive-paragraph" style="font-size: 20px; font-weight: 400; line-height: 27px; width: 542px; margin: auto; text-align: center;">
+                  Whether you need a full-scale Zoho marketing automation .
+                </p>
+                <p class="responsive-paragraph" style="font-size: 20px; font-weight: 400; line-height: 27px; width: 542px; margin: auto; text-align: center;">
+ agency or just want expert advice from a marketing
+                </p>
+                <p class="responsive-paragraph" style="font-size: 20px; font-weight: 400; line-height: 27px; width: 542px; margin: auto; text-align: center;">
+ automation consultant, we’re here to help.
+                </p>
+          
+                <div style="color: #FFFFFF; text-align: center; padding-top: 28px; padding-bottom: 28px;">
+                  <button type="button" class="btn" style="color:#FFFFFF; background-color: rgba(34, 108, 179, 1); border-radius: 26px;">
+                    Book Your Free Consultation
+                  </button>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
          <div style="background-color: rgba(0, 0, 0, 0.13); position: relative;">
             <div style="position: absolute; top: -400px; left: 0px; ">
-               <img src="ZOHO/Ellipse 22.svg" alt="marketing" style="width: 100%;">
+               <img src="./ZOHO/Ellipse 22.svg" alt="marketing" style="width: 100%;">
             </div>
             <div style="position: relative;">
                <div style="position: absolute; top: -500px;
                   right: 0px; z-index: 0;">
-                  <img src="ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
+                  <img src="./ZOHO/Ellipse 3.svg"  alt="marketing" style="width: 100%; " >
                </div>
             </div>
             <div class="container" style="padding-top: 97px; padding-bottom: 52px;">
-               <div class="row">
-                  <div class="col-3 text-center" style="position: relative; z-index: 1;">
-                     <img src="ZOHO/Group 1410083721.svg"  style="display: flex; flex-direction: row; justify-content: left; padding-bottom: 24px;" />
-                     <p style="font-size: 13px; font-weight: 400; text-align: left;">ZoFlowX builds advanced marketing automation systems on Zoho’s platform. We craft behavior-driven campaigns and CRM-integrated workflows that convert. As a certified Zoho Partner, we deliver strategy-led execution for growth-focused brands.</p>
-                     <div style="display: flex; flex-direction: row; gap:20px">
-                        <img src="ZOHO/ri_twitter-x-fill.svg"   />
-                        <img src="ZOHO/Instagram.svg"   />
-                        <img src="ZOHO/LinkedIn.svg"   />
-                        <img src="ZOHO/Facebook.svg"  />
+              
+                  <div class="row">
+                    <!-- About Section -->
+                    <div class="col-12 col-md-6 col-xl-3 footer-section mb-4">
+                      <img src="./ZOHO/Group 1410083721.svg" style="margin-bottom: 24px;" />
+                      <p style="font-size: 13px; font-weight: 400; text-align: left;">
+                        ZoFlowX builds advanced marketing automation systems on Zoho’s platform. We craft behavior-driven campaigns and CRM-integrated workflows that convert...
+                      </p>
+                      <div class="d-flex footer-icon-row" style="gap: 20px;">
+                        <img src="./ZOHO/ri_twitter-x-fill.svg" />
+                        <img src="./ZOHO/Instagram.svg" />
+                        <img src="./ZOHO/LinkedIn.svg" />
+                        <img src="./ZOHO/Facebook.svg" />
+                      </div>
+                    </div>
+                   <!-- Newsletter -->
+                   <div class="col-12 col-md-6 col-xl-3 footer-section mb-4 footer-subs-section">
+                     <p style="font-weight: 500; font-size: 24px;">Subscribe to Our Newsletter</p>
+                     <p style="font-size: 16px;">with Trust & Transparency</p>
+                     <div class="d-flex footer-input" style="gap: 10px;">
+                       <input type="email" placeholder="Enter Email Address"
+                         style="padding: 12px 20px; border: none; border-radius: 30px 0 0 30px; width: 250px; font-size: 16px; background: rgba(2, 35, 66, 1); color: white;" />
+                       <button style="padding: 12px 25px; border: none; border-radius: 0 30px 30px 0; background-color: rgba(34, 108, 179, 1); color: white;">
+                         Subscribe
+                       </button>
                      </div>
+                   </div>
+                    <!-- Contact Section -->
+                    <div class="col-6 col-md-6 col-xl-3 footer-section-contact mb-4">
+                      <p style="font-size: 20px; font-weight: 400;">Contact</p>
+                      <div class="d-flex mb-3" style="gap: 10px;">
+                        <img src="./ZOHO/skill-icons_linkedin.svg" />
+                        <p style="font-size: 12px; margin: 0;">LinkedIn: <span style="font-size: 14px; font-weight: 600;">Arul Raj</span></p>
+                      </div>
+                      <div class="d-flex mb-3" style="gap: 10px;">
+                        <img src="./ZOHO/skill-icons_linkedin (1).svg" />
+                        <p style="font-size: 14px; font-weight: 600; margin: 0;">info@zoflowx.com</p>
+                      </div>
+                      <div class="d-flex mb-3" style="gap: 10px;">
+                        <img src="./ZOHO/skill-icons_linkedin (2).svg" />
+                        <p style="font-size: 14px; font-weight: 600; margin: 0;">Greeta Techpark, Industrial Estate, Perungudi, Chennai, TN 600096</p>
+                      </div>
+                    </div>
+                
+                    <!-- Services Section -->
+                    <div class="col-6 col-md-6 col-xl-3 footer-section-service mb-4">
+                      <p style="font-size: 20px; font-weight: 600;">Services</p>
+                      <p style="font-size: 14px; color: rgba(255, 255, 255, 0.65);">Zoho Marketing Automation for B2B & B2C</p>
+                      <p style="font-size: 14px; color: rgba(255, 255, 255, 0.65);">Zoho CRM Setup & Integration for B2C</p>
+                      <p style="font-size: 14px; color: rgba(255, 255, 255, 0.65);">Full Funnel Automation with Zoho One</p>
+                      <p style="font-size: 14px; color: rgba(255, 255, 255, 0.65);">Lead Scoring, Segmentation & Journey Optimization</p>
+                    </div>
+                
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-6 col-xl-3 footer-section mb-4 footer-section-web">
+                      <p style="font-weight: 500; font-size: 24px; margin-bottom: 0;">Subscribe to</p>
+                      <p style="font-weight: 500; font-size: 24px;">Our Newsletter</p>
+                      <p style="font-size: 16px;">with Trust & Transparency</p>
+                      <div class="d-flex footer-input" style="gap: 10px;">
+                        <input type="email" placeholder="Enter Email Address"
+                          style="padding: 12px 20px; border: none; border-radius: 30px 0 0 30px; width: 250px; font-size: 16px; background: rgba(2, 35, 66, 1); color: white;" />
+                        <button style="padding: 12px 25px; border: none; border-radius: 0 30px 30px 0; background-color: rgba(34, 108, 179, 1); color: white;">
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-3 ">
-                     <div style="display: flex; flex-direction: column;">
-                        <p style="font-size: 20px; font-weight: 400;">Contact</p>
-                        <div  style="display: flex; gap: 10px;align-items: top; justify-content: left; padding-bottom: 20px;">
-                           <img  src="ZOHO/skill-icons_linkedin.svg" />
-                           <p style="font-size: 12px; font-weight: 400; margin-bottom: 0px">LinkedIn: <span  style="font-size: 14px; font-weight: 600;">Arul Raj</span></p>
-                        </div>
-                        <div  style="display: flex; gap: 10px; align-items: top; justify-content: left; padding-bottom: 20px;">
-                           <img  src="ZOHO/skill-icons_linkedin (1).svg" />
-                           <p style="font-size: 14px; font-weight: 600; margin-bottom: 0px;">LinkedIn: info@zoflowx.com</span></p>
-                        </div>
-                        <div style="display: flex; gap: 10px;align-items: top; justify-content: left;padding-bottom: 20px;">
-                           <img  src="ZOHO/skill-icons_linkedin (2).svg" />
-                           <p style="font-size: 14px; font-weight: 600;margin-bottom: 0px;">Greeta Techpark, Industrial Estate, Perungudi, Chennai, Tamil Nadu 600096</span></p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-3">
-                     <div style="width: 218px;">
-                        <div style="font-size: 20px; font-weight: 600;">
-                           Service
-                        </div>
-                        <div style="font-size: 14px; font-weight: 400; color: rgba(255, 255, 255, 0.65); padding-bottom: 10px;">
-                           Zoho Marketing Automation for B2B & B2C
-                        </div>
-                        <div style="font-size: 14px; font-weight: 400; color: rgba(255, 255, 255, 0.65);  padding-bottom: 10px;">
-                           Zoho CRM Setup & Integration for B2C
-                        </div>
-                        <div style="font-size: 14px; font-weight: 400; color: rgba(255, 255, 255, 0.65);  padding-bottom: 10px;">
-                           Full Funnel Automation with Zoho One
-                        </div>
-                        <div style="font-size: 14px; font-weight: 400; color: rgba(255, 255, 255, 0.65);  padding-bottom: 10px;">
-                           Lead Scoring, Segmentation & Journey Optimization
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-3">
-                     <p style="font-weight: 500; font-size: 32px; margin-bottom: 0px;">Subscribe to
-                        Our Newsletter
-                     </p>
-                     <p style="font-size: 16px; font-weight: 300px;">with Trust & Transparency</p>
-                     <div style="background-color: #0a1e35; padding: 40px; font-family: Arial, sans-serif;">
-                        <!-- Subscribe Box -->
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                           <input type="email" placeholder="Enter Email Address" 
-                              style="padding: 12px 20px; border: none; border-radius: 30px 0 0 30px; width: 250px; font-size: 16px; background: rgba(2, 35, 66, 1); color: white; backdrop-filter: blur(41px)
-                              ">
-                           <button style="padding: 12px 25px; border: none; border-radius: 30px 30px 30px 30px; background-color: rgba(34, 108, 179, 1); color: white; font-size: 16px; ">
-                           Subscribe
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+              
+                
             </div>
             <div  style="background-color: rgba(0, 0, 0, 0.13);">
                <div class="container">
-                  <p style="font-size: 400; font-weight: 20px; margin: auto; padding-top: 17px; padding-bottom: 51px; display: flex; justify-content: center;">© 2025 ZoFlowX – Division of Inboxist MarTech Solutions Pvt Ltd | Certified Zoho Partner</p>
+                  <p style=" font-weight: 400; margin: auto; padding-top: 17px; padding-bottom: 51px; display: flex; justify-content: center; text-align: center;">© 2025 ZoFlowX – Division of Inboxist MarTech Solutions Pvt Ltd | Certified Zoho Partner</p>
                </div>
             </div>
             <!-- ss -->
